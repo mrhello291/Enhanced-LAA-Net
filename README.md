@@ -1,5 +1,7 @@
 # 🔬 Enhanced LAA -Net: CBAM + Restormer for Robust Face Forgery Detection
 
+Presentation Link - [Canva](https://www.canva.com/design/DAGoAiMCg9k/r0Z1bWFoJVnz2YbR27ZESg/edit)
+
 ## Overview
 
 This repository presents an improved face forgery detection model built on **LAA -Net**, enhanced by:
@@ -27,22 +29,17 @@ These upgrades significantly enhance generalization across varied domains and fo
 
 ## 📈 Experimental Results
 
-### CBAM-enhanced LAA -Net (On YouTube -real / Celeb -real / Celeb -synthesis)
 
-| Metric | Accuracy (%) | AUC (%) | AP (%) | AR (%) | mF1 (%) |
-| ------ | ------------ | ------- | ------ | ------ | ------- |
-| Value  | 63.64        | 62.92   | 73.59  | 59.62  | 65.87   |
+| Model Variant                         | Noise Type           | Dataset(s)                                | Accuracy (%) | AUC (%) | AP (%) | AR (%) | mF1 (%) |
+|--------------------------------------|----------------------|-------------------------------------------|--------------|---------|--------|--------|---------|
+| LAA‑Net                              | None                 | FaceForensics++                           | 85.00        | 95.38   | 94.75  | 85.00  | 89.61   |
+| LAA‑Net                              | None                 | YouTube-real / Celeb-real / Celeb-synthesis | 80.46        | 92.34   | 95.85  | 83.11  | 89.03   |
+| LAA‑Net                              | Gaussian (σ = 0.3)   | FaceForensics++                           | 51.42        | 55.10   | 53.58  | 51.42  | 52.48   |
+| CBAM‑enhanced LAA‑Net                | Gaussian (σ = 0.3)   | FaceForensics++                           | 51.42        | 70.17   | 63.91  | 51.43  | 56.99   |
+| LAA‑Net + Restormer                  | Gaussian (σ = 0.3)   | FaceForensics++                           | 60.71        | 89.06   | 89.74  | 50.71  | 64.80   |
 
-> Moderate accuracy/AUC demonstrates strong capability in cross-domain real/fake detection.
+> 💡 **Insight:** CBAM and Restormer significantly improve AUC and AP under noisy conditions, indicating stronger generalization and robustness, even though raw accuracy may drop due to data perturbations.
 
----
-
-### LAA -Net + Restormer (On FaceForensics++ splits)
-
-* **Datasets**: Original / Deepfakes / Face2Face / FaceSwap / NeuralTextures
-* **Metrics**: ACC = 50.7%, AUC = 89.07%, AP = 89.74%, AR = 50.71%, mF1 = 64.81%
-
-The high AUC/AP indicate exceptional discrimination even with noisy inputs, though raw accuracy drops due to domain shifts.
 
 ---
 
