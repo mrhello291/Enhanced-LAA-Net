@@ -36,7 +36,7 @@ These upgrades significantly enhance generalization across varied domains and fo
 | LAA‑Net                              | None                 | YouTube-real / Celeb-real / Celeb-synthesis | 80.46        | 92.34   | 95.85  | 83.11  | 89.03   |
 | LAA‑Net                              | Gaussian (σ = 0.3)   | FaceForensics++                           | 51.42        | 55.10   | 53.58  | 51.42  | 52.48   |
 | CBAM‑enhanced LAA‑Net                | Gaussian (σ = 0.3)   | FaceForensics++                           | 51.42        | 70.17   | 63.91  | 51.43  | 56.99   |
-| LAA‑Net + Restormer                  | Gaussian (σ = 0.3)   | FaceForensics++                           | 60.71        | 89.06   | 89.74  | 50.71  | 64.80   |
+| LAA‑Net + Restormer                  | Gaussian (σ = 0.3)   | FaceForensics++                           | 50.71        | 89.06   | 89.74  | 50.71  | 64.80   |
 
 > 💡 **Insight:** CBAM and Restormer significantly improve AUC and AP under noisy conditions, indicating stronger generalization and robustness, even though raw accuracy may drop due to data perturbations.
 
