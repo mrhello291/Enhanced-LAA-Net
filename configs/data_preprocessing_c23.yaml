@@ -1,0 +1,20 @@
+PREPROCESSING:
+  DATASET: FF++ 
+  SPLIT: test
+  ROOT: /media/storage/Arya/deepfake_research/datasets/ff++/Celeb-DFv2/c23/
+    #ROOT: /media/storage/Arya/deepfake_research/datasets/ff++/FaceForensics++/c23/
+    #FAKETYPE: [Deepfakes, Face2Face, FaceSwap, NeuralTextures
+  FAKETYPE: [YouTube-real, Celeb-real, Celeb-synthesis]
+    #FAKETYPE: [Original] 
+    #IMAGE_SUFFIX: jpg
+  IMAGE_SUFFIX: png
+    #DATA_TYPE: images
+  DATA_TYPE: frames
+  LABEL: [real]
+  facial_lm_pretrained: /media/storage/Arya/deepfake_research/pretrained/shape_predictor_81_face_landmarks/shape_predictor_81_face_landmarks.dat
+  N_LANDMARKS: 81
+  SAMPLING:
+    ACTIVE: False
+    NUMBERS: 8
+  DEBUG: False
+  COMPRESSION: c23
