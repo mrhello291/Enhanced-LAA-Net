@@ -121,6 +121,7 @@ This project was developed and maintained by:
 - **Bhupesh Yadav**
 - **Piyush Kumar**
 - **Asif Hoda**
+- **Manjeet Rai**
 
 
 ---
