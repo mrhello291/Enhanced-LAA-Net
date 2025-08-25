@@ -33,10 +33,14 @@ These upgrades significantly enhance generalization across varied domains and fo
 | Model Variant                         | Noise Type           | Dataset(s)                                | Accuracy (%) | AUC (%) | AP (%) | AR (%) | mF1 (%) |
 |--------------------------------------|----------------------|-------------------------------------------|--------------|---------|--------|--------|---------|
 | LAA‑Net                              | None                 | FaceForensics++                           | 85.00        | 95.38   | 94.75  | 85.00  | 89.61   |
-| LAA‑Net                              | None                 | YouTube-real / Celeb-real / Celeb-synthesis | 80.46        | 92.34   | 95.85  | 83.11  | 89.03   |
+| LAA‑Net                              | None                 | Celeb-DF v2                               | 80.46        | 92.34   | 95.85  | 83.11  | 89.03   |
 | LAA‑Net                              | Gaussian (σ = 0.3)   | FaceForensics++                           | 51.42        | 55.10   | 53.58  | 51.42  | 52.48   |
 | CBAM‑enhanced LAA‑Net                | Gaussian (σ = 0.3)   | FaceForensics++                           | 51.42        | 70.17   | 63.91  | 51.43  | 56.99   |
+| LAA‑Net + Restormer                  | None                 | FaceForensics++                           | 80.36        | 88.78   | 90.39  | 80.36  | 85.08   |
 | LAA‑Net + Restormer                  | Gaussian (σ = 0.3)   | FaceForensics++                           | 50.71        | 89.06   | 89.74  | 50.71  | 64.80   |
+| LAA‑Net + Restormer                  | None                 | Celeb-DF v2                               | 69.25        | 79.94   | 89.46  | 72.56  | 80.13   |
+| LAA‑Net + Restormer                  | Gaussian (σ = 0.3)   | Celeb-DF v2                               | 36.17        | 80.90   | 88.87  | 51.36  | 65.08   |
+
 
 > 💡 **Insight:** CBAM and Restormer significantly improve AUC and AP under noisy conditions, indicating stronger generalization and robustness, even though raw accuracy may drop due to data perturbations.
 
